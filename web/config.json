@@ -1,0 +1,19 @@
+{
+    "models": [
+        {
+            "tag": "div",
+            "class": "frame",
+            "action": "walk"
+        },
+        {
+            "tag": "div",
+            "class": "frame-below",
+            "action": "jump"
+        },
+        {
+            "tag": "div",
+            "class": "frame-above",
+            "action": "lower"
+        }
+    ]
+}
