@@ -1,5 +1,5 @@
 /**
- * @param {Element} playerElement 
+ * @param {HTMLElement} playerElement 
  * @returns {void}
  */
 export const jump = (playerElement) => {
@@ -8,7 +8,7 @@ export const jump = (playerElement) => {
 };
 
 /**
- * @param {Element} playerElement 
+ * @param {HTMLElement} playerElement 
  * @returns {void}
  */
 export const notJump = (playerElement) => {
@@ -17,7 +17,7 @@ export const notJump = (playerElement) => {
 };
 
 /**
- * @param {Element} playerElement 
+ * @param {HTMLElement} playerElement 
  * @returns {void|null}
  */
 export const lower = (playerElement) => {
@@ -26,7 +26,7 @@ export const lower = (playerElement) => {
 };
 
 /**
- * @param {Element} playerElement 
+ * @param {HTMLElement} playerElement 
  * @returns {void}
  */
 export const notLower = (playerElement) => {

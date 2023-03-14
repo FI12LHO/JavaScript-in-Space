@@ -47,7 +47,6 @@ export const createNewFrame = (frames, models) => {
     newElement.setAttribute('data-type', 'frame');
     newElement.className = model.class;
     newElement.setAttribute('action', model.action);
-    // newElement.innerText = model.action;
     newElement.appendChild(document.createElement('div'));
 
     return newElement;

@@ -7,12 +7,12 @@
         },
         {
             "tag": "div",
-            "class": "frame-below",
+            "class": "frame frame-below",
             "action": "jump"
         },
         {
             "tag": "div",
-            "class": "frame-above",
+            "class": "frame frame-above",
             "action": "lower"
         }
     ]
