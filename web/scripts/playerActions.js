@@ -1,3 +1,5 @@
+import { openPopup } from "./menu.js";
+
 /**
  * @param {HTMLElement} playerElement 
  * @returns {void}
@@ -42,9 +44,9 @@ export const notLower = (playerElement) => {
 export const die = (action, loopId = null) => {
     console.log(action);
 
-    alert("You're dead!!");
+    // alert("You're dead!!");
 
     clearInterval(loopId);
 
-    document.location.reload();
+    openPopup(document.querySelector('#game-over-container'));
 };
