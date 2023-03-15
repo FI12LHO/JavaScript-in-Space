@@ -62,10 +62,12 @@ const carousel = (data) => {
 const loop = setInterval(async () => {
     const data = await getModels();
 
-    // clearInterval(loop);
+    if (document.querySelector('#start-game')?.value != 'true') {
+        return null;
+    }
 
     check(
-        document.querySelectorAll('[data-type=frame]')[4],
+        document.querySelectorAll('[data-type=frame]')[2],
         Player,
         loop
     );
@@ -73,7 +75,7 @@ const loop = setInterval(async () => {
     setScore(document.querySelector('#score'));
 
     carousel(data);
-}, 150);
+}, 125);
 
 document.addEventListener('keypress', (e) => {
     if (e.key.toLowerCase() == 'w') keydown('jump');
